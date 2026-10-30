@@ -70,7 +70,7 @@ export default function Home() {
         setReviews(reviewsData);
       } catch (err) {
         console.error('Error loading home data:', err);
-        setError('Failed to connect to JSON Server at http://localhost:3000. Please ensure the backend is running.');
+        setError('Failed to connect to the API server. Please ensure the backend is running.');
       } finally {
         setLoading(false);
       }
